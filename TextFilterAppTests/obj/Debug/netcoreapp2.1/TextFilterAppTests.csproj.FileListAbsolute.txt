@@ -1,0 +1,17 @@
+D:\Code\Calastone\TextFilterApp\TextFilterAppTests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+D:\Code\Calastone\TextFilterApp\TextFilterAppTests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+D:\Code\Calastone\TextFilterApp\TextFilterAppTests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+D:\Code\Calastone\TextFilterApp\TextFilterAppTests\bin\Debug\netcoreapp2.1\TextFilterAppTests.deps.json
+D:\Code\Calastone\TextFilterApp\TextFilterAppTests\bin\Debug\netcoreapp2.1\TextFilterAppTests.runtimeconfig.json
+D:\Code\Calastone\TextFilterApp\TextFilterAppTests\bin\Debug\netcoreapp2.1\TextFilterAppTests.runtimeconfig.dev.json
+D:\Code\Calastone\TextFilterApp\TextFilterAppTests\bin\Debug\netcoreapp2.1\TextFilterAppTests.dll
+D:\Code\Calastone\TextFilterApp\TextFilterAppTests\obj\Debug\netcoreapp2.1\TextFilterAppTests.csprojAssemblyReference.cache
+D:\Code\Calastone\TextFilterApp\TextFilterAppTests\obj\Debug\netcoreapp2.1\TextFilterAppTests.csproj.CoreCompileInputs.cache
+D:\Code\Calastone\TextFilterApp\TextFilterAppTests\obj\Debug\netcoreapp2.1\TextFilterAppTests.AssemblyInfoInputs.cache
+D:\Code\Calastone\TextFilterApp\TextFilterAppTests\obj\Debug\netcoreapp2.1\TextFilterAppTests.AssemblyInfo.cs
+D:\Code\Calastone\TextFilterApp\TextFilterAppTests\bin\Debug\netcoreapp2.1\TextFilterAppTests.pdb
+D:\Code\Calastone\TextFilterApp\TextFilterAppTests\bin\Debug\netcoreapp2.1\TextFilterApp.dll
+D:\Code\Calastone\TextFilterApp\TextFilterAppTests\bin\Debug\netcoreapp2.1\TextFilterApp.pdb
+D:\Code\Calastone\TextFilterApp\TextFilterAppTests\obj\Debug\netcoreapp2.1\TextFilterAppTests.csproj.CopyComplete
+D:\Code\Calastone\TextFilterApp\TextFilterAppTests\obj\Debug\netcoreapp2.1\TextFilterAppTests.dll
+D:\Code\Calastone\TextFilterApp\TextFilterAppTests\obj\Debug\netcoreapp2.1\TextFilterAppTests.pdb

@@ -1,0 +1,11 @@
+D:\Code\Calastone\TextFilterApp\TextFilterApp\bin\Debug\netcoreapp2.1\TextFilterApp.deps.json
+D:\Code\Calastone\TextFilterApp\TextFilterApp\bin\Debug\netcoreapp2.1\TextFilterApp.runtimeconfig.json
+D:\Code\Calastone\TextFilterApp\TextFilterApp\bin\Debug\netcoreapp2.1\TextFilterApp.runtimeconfig.dev.json
+D:\Code\Calastone\TextFilterApp\TextFilterApp\bin\Debug\netcoreapp2.1\TextFilterApp.dll
+D:\Code\Calastone\TextFilterApp\TextFilterApp\bin\Debug\netcoreapp2.1\TextFilterApp.pdb
+D:\Code\Calastone\TextFilterApp\TextFilterApp\obj\Debug\netcoreapp2.1\TextFilterApp.csproj.CoreCompileInputs.cache
+D:\Code\Calastone\TextFilterApp\TextFilterApp\obj\Debug\netcoreapp2.1\TextFilterApp.AssemblyInfoInputs.cache
+D:\Code\Calastone\TextFilterApp\TextFilterApp\obj\Debug\netcoreapp2.1\TextFilterApp.AssemblyInfo.cs
+D:\Code\Calastone\TextFilterApp\TextFilterApp\obj\Debug\netcoreapp2.1\TextFilterApp.dll
+D:\Code\Calastone\TextFilterApp\TextFilterApp\obj\Debug\netcoreapp2.1\TextFilterApp.pdb
+D:\Code\Calastone\TextFilterApp\TextFilterApp\obj\Debug\netcoreapp2.1\TextFilterApp.csprojAssemblyReference.cache
