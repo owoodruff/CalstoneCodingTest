@@ -29,7 +29,6 @@ namespace TextFilterAppTests
         {
             TextFilter textFilter = new TextFilter();
             var output = textFilter.WordFilterByCharacter(word, filterCharacters);
-            var x = "test";
             output.ShouldBe(expectedOutput);
         }
 
