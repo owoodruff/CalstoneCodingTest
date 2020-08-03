@@ -34,6 +34,24 @@ namespace TextFilterAppTests
 
 
         [Theory()]
+        [InlineData("too", new char[] { 'a', 'e', 'i', 'o', 'u' }, new char[] { 't' }, 3, "")]
+        [InlineData("what", new char[] { 'a', 'e', 'i', 'o', 'u' }, new char[] { 't' }, 3, "")]
+        [InlineData("hello", new char[] { 'a', 'e', 'i', 'o', 'u' }, new char[] { 't' }, 3, "hello")]
+        [InlineData("rather", new char[] { 'a', 'e', 'i', 'o', 'u' }, new char[] { 't' }, 3, "")]
+        [InlineData("currently", new char[] { 'a', 'e', 'i', 'o', 'u' }, new char[] { 't' }, 3, "")]
+        [InlineData("to", new char[] { 'a', 'e', 'i', 'o', 'u' }, new char[] { 't' }, 3, "")]
+        [InlineData("pp", new char[] { 'a', 'e', 'i', 'o', 'u' }, new char[] { 't' }, 3, "")]
+        [InlineData("sss", new char[] { 'a', 'e', 'i', 'o', 'u' }, new char[] { 't' }, 3, "sss")]
+        
+        public void FilterCriteria(string word, char[] vowels, char[] filterCharacters, int wordLength, string expectedOutput)
+        {
+            TextFilter textFilter = new TextFilter();
+            var output = textFilter.FilterCrieria(word, vowels, filterCharacters, wordLength);
+            output.ShouldBe(expectedOutput);
+        }
+
+
+        [Theory()]
         [InlineData("clean", 3, false)]
         [InlineData("to", 3, true)]
         [InlineData("too", 3, false)]
@@ -54,9 +72,9 @@ namespace TextFilterAppTests
         public void PunctuationStartTest(string word, string expectedOutput, string expectedPunctuation)
         {
             TextFilter textFilter = new TextFilter();
-            var output = textFilter.TrimPunctuationStart(word, out string puncuationStart);
+            var output = textFilter.TrimPunctuationStart(word, out string punctuationStart);
             output.ShouldBe(expectedOutput);
-            puncuationStart.ShouldBe(expectedPunctuation);
+            punctuationStart.ShouldBe(expectedPunctuation);
         }
 
         [Theory()]
@@ -67,9 +85,9 @@ namespace TextFilterAppTests
         public void PunctuationEndTest(string word, string expectedOutput, string expectedPunctuation)
         {
             TextFilter textFilter = new TextFilter();
-            var output = textFilter.TrimPunctuationEnd(word, out string puncuationEnd);
+            var output = textFilter.TrimPunctuationEnd(word, out string punctuationEnd);
             output.ShouldBe(expectedOutput);
-            puncuationEnd.ShouldBe(expectedPunctuation);
+            punctuationEnd.ShouldBe(expectedPunctuation);
         }
     }
 }

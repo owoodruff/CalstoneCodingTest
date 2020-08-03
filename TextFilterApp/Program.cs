@@ -18,7 +18,7 @@ namespace TextFilterApp
 
             foreach (string line in lines)
             {
-                var filteredText = textFilter.FilterText(line);
+                var filteredText = textFilter.FilterText(line, new char[]{'a','e','i','o','u'}, new char[] {'t'}, 3);
                 Console.WriteLine("\t" + filteredText);
             }
 

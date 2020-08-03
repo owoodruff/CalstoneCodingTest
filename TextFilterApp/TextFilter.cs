@@ -3,31 +3,29 @@
 namespace TextFilterApp
 {
     public class TextFilter
-    {
-        private char[] vowels =  new char[]{'a','e','i','o','u'};
-        public string FilterText(string text)
+    {   
+        public string FilterText(string text, char[] vowels, char[] filterLetters, int wordLength)
         {
             var textNoSpaces = text.Split(' ');
             var output = "";
             foreach (var word in textNoSpaces)
             {
-                var sanitizedWord = TrimPunctuationStart(word, out string puncuationStart);
-                sanitizedWord = TrimPunctuationEnd(sanitizedWord, out string puncuationEnd);
-
-                output += $"{puncuationStart}{FilterCrieria(sanitizedWord)}{puncuationEnd} ";
+                var sanitizedWord = TrimPunctuationStart(word, out string punctuationStart);
+                sanitizedWord = TrimPunctuationEnd(sanitizedWord, out string punctuationEnd);
+                output += $"{punctuationStart}{FilterCrieria(sanitizedWord, vowels, filterLetters, wordLength)}{punctuationEnd} ";
             }
 
             return output;
         }
 
-        private string FilterCrieria(string sanitizedWord)
+        public string FilterCrieria(string sanitizedWord, char[] vowels, char[] filterLetters, int wordLength)
         {
-            if (WordLengthFilter(sanitizedWord, 3))
+            if (WordLengthFilter(sanitizedWord, wordLength))
             {
                 return "";
             }
 
-            if (WordFilterByCharacter(sanitizedWord, new char[] {'t'}))
+            if (WordFilterByCharacter(sanitizedWord, filterLetters))
             {
                 return "";
             }
@@ -37,43 +35,43 @@ namespace TextFilterApp
                 return "";
             }
             
-            return $"{sanitizedWord}";
+            return sanitizedWord;
         }
 
-        public string TrimPunctuationStart(string word, out string puncuationStart)
+        public string TrimPunctuationStart(string word, out string punctuationStart)
         {
-            puncuationStart = "";
+            punctuationStart = "";
             foreach (char character in word)
             {
                 if (char.IsPunctuation(character))
                 {
-                    puncuationStart += character;
+                    punctuationStart += character;
                 }
                 else
                 {
-                    return word.Substring(puncuationStart.Length);
+                    return word.Substring(punctuationStart.Length);
                 }
             }
 
             return "";
         }
 
-        public string TrimPunctuationEnd(string word, out string puncuationEnd)
+        public string TrimPunctuationEnd(string word, out string punctuationEnd)
         {
-            puncuationEnd = "";
+            punctuationEnd = "";
             for(int i = word.Length - 1; i>=0; i--)
             {
                 var character = word[i];
                 if (char.IsPunctuation(character))
                 {
-                    puncuationEnd += character;
+                    punctuationEnd += character;
                 }
                 else
                 {
-                    char[] puncuation = puncuationEnd.ToCharArray();
-                    Array.Reverse(puncuation);
-                    puncuationEnd = new string(puncuation);
-                    return word.Substring(0, word.Length - puncuationEnd.Length);
+                    char[] punctuation = punctuationEnd.ToCharArray();
+                    Array.Reverse(punctuation);
+                    punctuationEnd = new string(punctuation);
+                    return word.Substring(0, word.Length - punctuationEnd.Length);
                 }
             }
 
